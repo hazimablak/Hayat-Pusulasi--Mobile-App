@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.MedievalApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/leather_brown</item>
+        <item name="colorOnPrimary">@color/parchment_bg</item>
+        <item name="android:statusBarColor">@color/leather_brown</item>
+    </style>
+    <style name="Theme.MedievalApp" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+</resources>

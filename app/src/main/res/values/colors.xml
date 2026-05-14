@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="mysticBackgroundStart">#1A1A2E</color>
+    <color name="mysticBackgroundEnd">#16213E</color>
+    <color name="mysticGold">#FFD700</color>
+    <color name="mysticGoldDim">#B39200</color>
+    <color name="mysticText">#E94560</color>
+    <color name="white_transparent">#80FFFFFF</color>
+    <color name="parchment_bg">#F5E6C6</color>
+    <color name="parchment_dark">#D4C5A5</color>
+    <color name="ink_color">#2F241E</color>
+    <color name="leather_brown">#4A3121</color>
+    <color name="wax_red">#8A2323</color>
+    <color name="gold_accent">#C5A059</color>
+    <color name="royal_red">#5D1010</color>
+    <color name="royal_border">#C5A059</color>
+    <color name="royal_shadow">#2A0505</color>
+    <color name="rivet_color">#E6D7BC</color>
+    <color name="wood_dark">#3E2723</color>
+    <color name="wood_light">#5D4037</color>
+    <color name="iron_rust">#272727</color>
+    <color name="rope_beige">#D7CCC8</color>
+    <color name="rusticBackgroundStart">#3E2723</color>
+    <color name="rusticBackgroundEnd">#1B100C</color>
+    <color name="rusticGold">#FFB300</color>
+    <color name="rusticParchment">#EFEBE9</color>
+    <color name="rusticButton">#5D4037</color>
+    <color name="rusticInputBg">#803E2723</color>
+</resources>
+

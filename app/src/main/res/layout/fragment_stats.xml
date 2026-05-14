@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_archive_library"> <!-- Library Background -->
+
+    <!-- Content ScrollView (Transparent background) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <!-- Header floating in clouds -->
+            <!-- Header floating in clouds -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_date_header"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="32dp"
+                android:elevation="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Krallık Arşivi"
+                    android:textSize="28sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="#EFEBE9"
+                    android:shadowColor="#80000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="4"
+                    android:layout_gravity="center"/>
+            </FrameLayout>
+
+            <!-- GOALS / MEDAL EKRANI -->
+            <LinearLayout
+                android:id="@+id/cardGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_scroll_strip"
+                android:padding="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tvTotalCompleted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tamamlanan Görevler: 0"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/ink_color"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/tvEmojiMedals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"/>
+
+                <!-- MEDAL ICON (Hidden by default) -->
+                <ImageView
+                    android:id="@+id/imgMedal"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_medal"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp"/>
+                
+                <TextView
+                    android:id="@+id/tvMedalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aylık Hedef Tamamlandı!"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#DAA520"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <!-- STREAK / FIRE EKRANI -->
+            <LinearLayout
+                android:id="@+id/cardStreak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_scroll_strip"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvStreak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Günlük Serisi: 0 Gün"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"
+                    android:textColor="@color/ink_color"
+                    android:textAlignment="center"/>
+
+                <!-- FLAME ICON (Hidden by default) -->
+                <ImageView
+                    android:id="@+id/imgFlame"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_flame_yellow"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRecentQuests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_parchment"
+                android:padding="16dp"
+                android:elevation="4dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Son Zaferler (Tümü İçin Tıkla)"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/wax_red"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"/>
+
+                <LinearLayout
+                    android:id="@+id/containerLastQuests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

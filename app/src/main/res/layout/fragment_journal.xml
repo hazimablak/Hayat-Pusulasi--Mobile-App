@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/entireBookContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E2723"> <View
+    android:id="@+id/leftInnerCoverView"
+    android:layout_width="40dp"
+    android:layout_height="match_parent"
+    android:background="#3E2723"
+    android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/leftInnerCoverView"
+        android:background="#FFF8E1"
+        android:elevation="4dp">
+
+        <FrameLayout
+            android:id="@+id/dateContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_date_header"
+            android:elevation="4dp"
+            android:layout_marginTop="-8dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tarih Yükleniyor..."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFECB3"
+                android:fontFamily="serif"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <com.example.medievalapp.LinedEditText
+            android:id="@+id/etJournalContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/dateContainer"
+            android:layout_above="@id/btnCalendar"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@null"
+            android:gravity="top|start"
+            android:hint="Sevgili Günlük..."
+            android:textColor="#3E2723"
+            android:textColorHint="#8D6E63"
+            android:textSize="20sp"
+            android:lineSpacingExtra="10dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"/>
+
+        <ImageButton
+            android:id="@+id/btnCalendar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_square_button_brown"
+            android:src="@drawable/ic_calendar_vintage"
+            app:tint="#FFECB3"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:elevation="6dp"
+            android:contentDescription="Tarih Seç"/>
+
+        <ImageButton
+            android:id="@+id/btnSaveJournal"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_square_button_brown"
+            android:src="@drawable/ic_check"
+            app:tint="#FFECB3"
+            android:scaleType="fitCenter"
+            android:padding="10dp"
+            android:elevation="6dp"
+            android:contentDescription="Kaydet"/>
+
+        <View
+            android:id="@+id/overlayShadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="1"
+            android:elevation="10dp"/>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnPreviousDay"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_chevron_left"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="#5D4037"
+        android:visibility="gone"
+        android:elevation="20dp"/>
+
+    <ImageButton
+        android:id="@+id/btnNextDay"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_chevron_right"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:tint="#5D4037"
+        android:visibility="gone"
+        android:elevation="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/layoutJournalCover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/leftInnerCoverView"
+        android:background="#4E342E"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="15dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_rustic_sign"
+            android:alpha="0.3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Anılarım"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:textColor="#FFECB3"
+            android:letterSpacing="0.05"
+            android:shadowColor="#3E2723"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Dokun ve Aç"
+            android:fontFamily="serif"
+            android:textColor="#D7CCC8"
+            android:layout_marginBottom="40dp"/>
+    </FrameLayout>
+
+</RelativeLayout>

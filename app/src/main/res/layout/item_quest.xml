@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="4dp">
+
+    <LinearLayout
+        android:id="@+id/containerQuest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tvQuestNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="#3E2723"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvQuestTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ejderhayı Besle"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:textColor="#3E2723"/>
+
+            <TextView
+                android:id="@+id/tvTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kalan: 10:00"
+                android:textSize="12sp"
+                android:textColor="#B71C1C"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <!-- Medieval Seal Button -->
+        <ImageButton
+            android:id="@+id/btnCompleteQuest"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_wax_seal"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:contentDescription="Tamamla"/>
+
+    </LinearLayout>
+
+    <!-- Divider Line (Hand-drawn ink style effect) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5D4037"
+        android:alpha="0.3"
+        android:layout_marginTop="2dp"/>
+
+</LinearLayout>

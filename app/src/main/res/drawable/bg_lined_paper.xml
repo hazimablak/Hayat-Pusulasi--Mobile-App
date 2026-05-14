@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gölge / Derinlik Katmanı -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E0E0E0"/>
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+
+    <!-- Ana Beyaz Kağıt -->
+    <item android:left="1dp" android:right="1dp" android:top="1dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FAFAFA"/> <!-- Kırık Beyaz / Kağıt Rengi -->
+            <corners android:radius="2dp"/>
+            <stroke android:width="1dp" android:color="#EEEEEE"/>
+        </shape>
+    </item>
+    
+    <!-- Basit Çizgi Efekti (Manuel Olarak Birkaç Çizgi Ekliyoruz) -->
+    <!-- Not: XML ile sonsuz çizgi zor, bu yüzden sadece dekoratif kenar çizgisi (Margin Line) ekleyelim -->
+    <item android:left="40dp" android:right="0dp" android:top="0dp" android:bottom="0dp">
+        <shape android:shape="rectangle">
+             <solid android:color="#00000000"/> <!-- Şeffaf -->
+             <stroke android:width="1dp" android:color="#FFCDD2"/> <!-- Kırmızı/Pembe Kenar Çizgisi -->
+        </shape>
+    </item>
+    
+    <!-- Sol Kenar Maskesi (Kırmızı çizginin sağını göstermek için) -->
+     <item android:left="41dp" android:right="1dp" android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+             <solid android:color="#FAFAFA"/> 
+        </shape>
+    </item>
+
+</layer-list>

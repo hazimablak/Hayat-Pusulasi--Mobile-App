@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/leather_brown">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_parchment"/>
+
+    <ImageButton
+        android:id="@+id/btnBackToMenu"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignTop="@id/fragment_container"
+        android:layout_alignStart="@id/fragment_container"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_round_button"
+        android:src="@drawable/ic_back_arrow"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        app:tint="#3E2723"
+        android:elevation="10dp"
+        android:contentDescription="Ana Menüye Dön"/>
+</RelativeLayout>

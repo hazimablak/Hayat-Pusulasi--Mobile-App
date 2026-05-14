@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A120B"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_margin="24dp"
+    android:background="@drawable/bg_parchment"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:elevation="10dp">
+
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Maceracı Kimliği"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#3E2723"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="8dp"/>
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="#8D6E63"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvTabLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GİRİŞ YAP"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3E2723"
+            android:fontFamily="serif"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textSize="18sp"
+            android:textColor="#8D6E63"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:id="@+id/tvTabRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="KAYIT OL"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#8D6E63"
+            android:fontFamily="serif"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kullanıcı Adınız"
+        android:inputType="text"
+        android:textColor="#3E2723"
+        android:textColorHint="#8D6E63"
+        android:fontFamily="serif"
+        android:backgroundTint="#5D4037"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gizli Parola"
+        android:inputType="textPassword"
+        android:textColor="#3E2723"
+        android:textColorHint="#8D6E63"
+        android:fontFamily="serif"
+        android:backgroundTint="#5D4037"
+        android:drawableEnd="@drawable/ic_eye"
+        android:drawableTint="#5D4037"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Parolayı Doğrula"
+        android:inputType="textPassword"
+        android:textColor="#3E2723"
+        android:textColorHint="#8D6E63"
+        android:fontFamily="serif"
+        android:backgroundTint="#5D4037"
+        android:visibility="gone"
+        android:layout_marginBottom="16dp"/>
+
+    <CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beni Hatırla"
+        android:textColor="#5D4037"
+        app:buttonTint="#5D4037"
+        android:fontFamily="serif"
+        android:layout_gravity="start"
+        android:layout_marginBottom="12dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_square_button_brown"
+        android:text="Maceraya Başla"
+        android:textColor="#FFECB3"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="The Chronicler © 1243"
+        android:textColor="#5D4037"
+        android:fontFamily="serif"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

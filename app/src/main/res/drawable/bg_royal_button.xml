@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:top="4dp" android:left="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp"/>
+            <solid android:color="#66000000"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp"/>
+            <solid android:color="@color/royal_border"/>
+        </shape>
+    </item>
+
+    <item android:top="3dp" android:bottom="3dp" android:left="3dp" android:right="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp"/>
+            <solid android:color="@color/royal_red"/>
+            <gradient
+                android:startColor="#751818"
+                android:endColor="#420808"
+                android:angle="90"/>
+        </shape>
+    </item>
+
+    <item android:top="6dp" android:left="6dp" android:width="6dp" android:height="6dp">
+        <shape android:shape="oval"><solid android:color="@color/rivet_color"/></shape>
+    </item>
+    <item android:top="6dp" android:right="6dp" android:width="6dp" android:height="6dp" android:gravity="right">
+        <shape android:shape="oval"><solid android:color="@color/rivet_color"/></shape>
+    </item>
+    <item android:bottom="6dp" android:left="6dp" android:width="6dp" android:height="6dp" android:gravity="bottom">
+        <shape android:shape="oval"><solid android:color="@color/rivet_color"/></shape>
+    </item>
+    <item android:bottom="6dp" android:right="6dp" android:width="6dp" android:height="6dp" android:gravity="bottom|right">
+        <shape android:shape="oval"><solid android:color="@color/rivet_color"/></shape>
+    </item>
+
+</layer-list>
